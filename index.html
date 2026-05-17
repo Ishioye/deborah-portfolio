@@ -7,44 +7,65 @@
 
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Font Awesome -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
   <body>
+    <!-- Animated Background -->
+    <div class="background-animation"></div>
+
     <!-- Navigation -->
     <header>
       <nav>
-        <h2 class="logo">Deborah.</h2>
+        <h2 class="logo">Deborah</h2>
 
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <!-- Dark Mode Toggle -->
+        <button id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
       </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-      <div class="hero-text">
-        <h1>ISHIOYE DEBORAH OLUWALAYOMI</h1>
+      <div class="hero-container">
+        <!-- Profile Image -->
+        <div class="hero-image">
+          <img src="images/profile.png" alt="Deborah Profile Picture" />
+        </div>
 
-        <h2>Data Analyst | Data Scientist | Web Developer</h2>
+        <!-- Hero Text -->
+        <div class="hero-content">
+          <h1>ISHIOYE DEBORAH OLUWALAYOMI</h1>
 
-        <p>
-          Passionate about data, technology, and building modern web
-          experiences.
-        </p>
+          <h2>
+            I'm a
+            <span class="typing"></span>
+          </h2>
 
-        <div class="hero-buttons">
-          <a href="#projects" class="btn">View Projects</a>
+          <p>
+            Passionate about data analysis, machine learning, web development
+            and building modern digital experiences.
+          </p>
 
-          <a href="resume.pdf" class="btn btn-secondary" download>
-            Download Resume
-          </a>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn"> View Projects </a>
+
+            <a href="resume.pdf" download class="btn btn-secondary">
+              Download Resume
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -53,11 +74,10 @@
     <section id="about" class="section">
       <h2>About Me</h2>
 
-      <p>
+      <p class="about-text">
         I am a Data Analyst, Data Scientist, and Web Developer passionate about
-        solving problems using technology and data-driven solutions. I enjoy
-        building websites, analyzing data, and creating impactful digital
-        experiences.
+        solving problems using technology, data-driven solutions, and modern web
+        applications.
       </p>
     </section>
 
@@ -65,15 +85,44 @@
     <section id="skills" class="section">
       <h2>Skills</h2>
 
-      <div class="skills-container">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Python</div>
-        <div class="skill-card">Data Analysis</div>
-        <div class="skill-card">Machine Learning</div>
-        <div class="skill-card">SQL</div>
-        <div class="skill-card">Streamlit</div>
+      <div class="skill">
+        <p>HTML</p>
+
+        <div class="progress-bar">
+          <div class="progress html">90%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p>CSS</p>
+
+        <div class="progress-bar">
+          <div class="progress css">85%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p>JavaScript</p>
+
+        <div class="progress-bar">
+          <div class="progress js">75%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p>Python</p>
+
+        <div class="progress-bar">
+          <div class="progress python">90%</div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <p>Machine Learning</p>
+
+        <div class="progress-bar">
+          <div class="progress ml">80%</div>
+        </div>
       </div>
     </section>
 
@@ -83,30 +132,80 @@
 
       <div class="projects-container">
         <div class="project-card">
+          <img src="images/project1.png" alt="Project Image" />
+
           <h3>Diabetes Prediction System</h3>
 
-          <p>
-            A machine learning application for predicting diabetes using health
-            indicators and classification algorithms.
-          </p>
+          <p>Machine learning application for diabetes prediction.</p>
         </div>
 
         <div class="project-card">
-          <h3>Fraud Detection System</h3>
+          <img src="images/project2.png" alt="Project Image" />
 
-          <p>
-            A bank card fraud detection project using machine learning
-            techniques and Python.
-          </p>
+          <h3>Fast Food Website</h3>
+
+          <p>A responsive website for a fast food restaurant.</p>
         </div>
 
         <div class="project-card">
+          <img src="images/project3.png" alt="Project Image" />
+
           <h3>Portfolio Website</h3>
 
-          <p>
-            A responsive personal portfolio website showcasing my work, skills,
-            and experience.
-          </p>
+          <p>Responsive portfolio website with animations.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <!-- Certificates -->
+    <section id="certificates" class="section">
+      <h2>Certificates</h2>
+
+      <div class="certificate-container">
+        <!-- Certificate 1 -->
+        <div class="certificate-card">
+          <i class="fas fa-certificate"></i>
+
+          <h3>Data Analytics Certificate</h3>
+
+          <a
+            href="certificates/data analysis.pdf"
+            download
+            class="certificate-btn"
+          >
+            Download Certificate
+          </a>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="certificate-card">
+          <i class="fas fa-certificate"></i>
+
+          <h3>Digital Marketing</h3>
+
+          <a
+            href="certificates/digital marketing.pdf"
+            download
+            class="certificate-btn"
+          >
+            Download Certificate
+          </a>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="certificate-card">
+          <i class="fas fa-certificate"></i>
+
+          <h3>Web Development</h3>
+
+          <a
+            href="certificates/IBM intro to web development certificate.pdf"
+            download
+            class="certificate-btn"
+          >
+            Download Certificate
+          </a>
         </div>
       </div>
     </section>
@@ -115,19 +214,40 @@
     <section id="contact" class="section">
       <h2>Contact Me</h2>
 
-      <div class="contact-links">
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+
+        <input
+          type="email"
+          name="from_email"
+          placeholder="Your Email"
+          required
+        />
+
+        <textarea name="message" placeholder="Your Message" required>
+        </textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="social-links">
         <a href="https://github.com/Ishioye" target="_blank">
-          <i class="fab fa-github"></i> GitHub
+          <i class="fab fa-github"></i>
         </a>
 
         <a
-          href="https://www.linkedin.com/in/deborah-ishioye-39367b236?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          href="https://www.linkedin.com/posts/deborah-ishioye-39367b236_cybersecurity-croonerbeginner-techlearning-share-7459682882207301633-V88r?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADrU618B3qtoEu15iMpw3Qhey-rnK2SIWqc"
           target="_blank"
         >
-          <i class="fab fa-linkedin"></i> LinkedIn
+          <i class="fab fa-linkedin"></i>
         </a>
       </div>
     </section>
+
+    <!-- Background Music -->
+    <audio autoplay loop>
+      <source src="music/background.mp3" type="audio/mp3" />
+    </audio>
 
     <!-- Footer -->
     <footer>
@@ -135,5 +255,16 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- EmailJS -->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script>
+      emailjs.init("SJbSqjiI_0h48EMvh");
+    </script>
   </body>
 </html>
